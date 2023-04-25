@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/car.css" class="">
+      <link rel="stylesheet" href="/css/header.css" class="">
+<style>
+
+.nnbb{
+    width: 70%;
+    margin: 30px auto;
+}
+.bb{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+</style>
+
+</head>
+<body>
+    {{>header}}
+
+    <div class="main" >
+       <h1>{{event}}</h1>
+    {{#each user}}
+    <div class="nnbb">
+    <div class="bb">
+        <h2> TID - {{this.tid}} </h2>
+      <div class="b1">
+
+        <h1 style="display:inline;" >Member - </h1>
+        {{#each pid}}
+
+
+<h2 style="display:inline;">{{this.pidd}}, </h2>
+
+
+{{/each}}
+</div>
+        </div>
+<hr>
+
+</div>
+
+
+    {{/each}}
+
+
+
+    </div>
+
+
+
+</body>
+
+</html>

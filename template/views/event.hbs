@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/sign.css" class="">
+</head>
+<body>
+ 
+{{>header}}
+<form action="/event/data" method="POST">
+
+
+<input list="brow" placeholder="Individual Event Name" name="event"  >
+<datalist id="brow">
+
+  <option value="Code war">
+
+  <option value="Design the web">
+  <option value="Bug war">
+    <option value="E treasure hunt"></option>
+    <option value="C expert"></option>
+    <option value="Blind coding"></option>
+    <option value="Junk wars"></option>
+    
+
+
+  
+    <option value=""></option>
+
+
+<option value="Shabd e shayrana"></option>
+ 
+    <option value="Cad tricks"></option>
+   
+    <option value="Jam just a minute"></option>
+   
+   
+            <option value="Pharmadesk"></option>
+            
+                    
+                        <option value="Mandala art competition"></option>
+                           
+                                    
+                                        <option value="Doodle art"></option>
+                                            <option value="Technical painting"></option>
+                                                <option value="Quill the techvyom"></option>
+    <option value="Digital poster making"></option>    <option value="Screen masters"></option>
+        <option value="Pursue the market"></option>
+            <option value="Battle of memes"></option>
+               
+                        <option value="Tech gallery"></option>
+                            <option value="Plc designing"></option>
+                                <option value="Technical quiz"></option>
+                                    <option value="Round the cube"></option>
+
+</datalist>  
+
+
+<button type="submit">Search</button>
+{{#if msg}}
+<p class="msg" >{{msg}}</p>
+{{/if}}
+</form>
+
+
+
+
+
+</body>
+</html>

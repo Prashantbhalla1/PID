@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/sign.css" class="">
+</head>
+<body>
+ 
+{{>header}}
+<form action="/grp/data" method="POST">
+
+
+<input list="brow" placeholder="Grp Event Name" name="event"  >
+<datalist id="brow">
+   <option value="Mini hackathon"></option>
+  <option value="Bring the beauty"></option>
+      <option value="Futuristic techno panel game"></option>
+    <option value="Drone race"></option>
+     <option value="Drag and place"></option>
+<option value="Line follower robot"></option>
+<option value="Robo race"></option>
+ <option value="Robo war"></option>
+    <option value="Robo soccer"></option>
+    <option value="Maze solver"></option>
+    <option value="Chain reaction"></option>
+    <option value="Glider plane"></option>
+    <option value="Bridge building"></option>
+     <option value="Be the sherlock holmes"></option>
+      <option value="Dumb charades on book"></option>
+    <option value="Who am i"></option>
+     <option value="Aavishkarak"></option>
+            <option value="Pharmadesk"></option>
+                <option value="Pharma bins and recycling"></option>
+                <option value="Pharma minds"></option>
+                 <option value="Ad mad"></option>
+                                <option value="Business quiz"></option>
+                                <option value="Business plan"></option>
+                                 <option value="Screen masters"></option>
+                                  <option value="Mini militia"></option>
+                    <option value="Fifa"></option>
+
+</datalist>  
+
+
+<button type="submit">Search</button>
+{{#if msg}}
+<p class="msg" >{{msg}}</p>
+{{/if}}
+</form>
+
+
+
+
+
+</body>
+</html>

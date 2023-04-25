@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/prod1.css" class="">
+    <link rel="stylesheet" href="/css/header.css" class="">
+    <style>
+
+
+        table{
+    display: flex;
+    justify-content: center;
+    align-items: center;width: 100%;
+    margin:10px auto;
+    margin: 20ox;
+    font-size: 2rem;
+}
+tr{
+    
+
+}
+td,th{
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+
+}
+    </style>
+</head>
+<body>
+  {{>header}}
+    <div class="main" >
+      
+<h1>{{event}}</h1>
+       <table>
+<tr>
+    <td>PID</td>
+    <td>Rollno</td>
+    <td>Name</td>
+    <td>College</td>
+    <td>Course</td>
+    <td>Branch</td>
+</tr>
+
+      
+    {{#each user}}
+<tr>
+    <td>{{this.pid}}</td>
+    <td>{{this.rollno}}</td>
+    <td>{{this.name}}</td>
+    <td>{{this.College}}</td>
+    <td>{{this.Course}}</td>
+    <td>{{this.Branch}}</td>
+</tr>
+
+    {{/each}}
+
+     </table>
+  
+    </div>
+
+</body>
+</html>
