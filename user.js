@@ -13,7 +13,9 @@ const User=mongoose.model('User',{
     rollno:{
         type:Number,
      
-        required:true
+        required:true,
+        unique:true
+    
     },
     College:{
         type:String ,
@@ -32,7 +34,8 @@ const User=mongoose.model('User',{
         require:true,
     },events:[{
         event:{
-            type:String
+            type:String,
+            
         }
     }],
 

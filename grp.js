@@ -19,6 +19,9 @@ const Grp=mongoose.model('Grp',{
     events:{
         type:String
     },
+    name:[{pidd:{
+        type:Number
+    }}]
    
 
 
